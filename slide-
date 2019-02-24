@@ -1,5 +1,5 @@
-#!/bin/sh
+#!/usr/bin/env 9 rc
 
-PREV=$(($(sn | rev | cut -d '/' -f1 | rev) - 1))
+next=${expr `{sn | rev | cut -d '/' -f1 | rev} - 1}
 
-slide $(pwd)/${PREV}.slide
+slide $(pwd)/$next.slide

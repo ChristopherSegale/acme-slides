@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env 9 rc
 
 echo name $1 | 9p write acme/$winid/ctl
 echo clean | 9p write acme/$winid/ctl
