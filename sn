@@ -1,0 +1,5 @@
+#!/bin/sh
+
+FILE=$(9p read acme/$winid/tag | cut -d ' ' -f1)
+SN=$(echo ${FILE} | cut -d '.' -f1)
+echo $SN

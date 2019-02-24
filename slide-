@@ -1,0 +1,5 @@
+#!/bin/sh
+
+PREV=$(($(sn | rev | cut -d '/' -f1 | rev) - 1))
+
+slide $(pwd)/${PREV}.slide

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+NEXT=$(($(sn | rev | cut -d '/' -f1 | rev) + 1))
+
+slide $(pwd)/${NEXT}.slide

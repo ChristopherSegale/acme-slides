@@ -1,0 +1,17 @@
+Acme Slides
+
+These are a series of shell scripts written to do text-based slide shows on the Acme text editor.  This application was inspired by the slide show scripts that Russ Cox wrote in his tour of Acme
+
+Format of slides
+Slides have the .slide file extension and file names are numbers going from one up.
+
+Scripts
+sts: Starts a slide show in the current directory if it contain slide files.
+
+slide+: Goes to the next slide.
+
+slide-: Goes to the previous slide.
+
+sn: Gives the slide number.  For internal use by the other scripts
+
+slide: Outputs a slide into the current window.  For internal use by slide+ and slide-
